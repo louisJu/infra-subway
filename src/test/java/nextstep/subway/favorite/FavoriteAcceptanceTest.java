@@ -33,6 +33,7 @@ public class FavoriteAcceptanceTest extends AcceptanceTest {
     private StationResponse 양재역;
     private StationResponse 정자역;
     private StationResponse 광교역;
+    private StationResponse 잠실역;
 
     private TokenResponse 사용자;
 
@@ -44,6 +45,7 @@ public class FavoriteAcceptanceTest extends AcceptanceTest {
         양재역 = StationAcceptanceTest.지하철역_등록되어_있음("양재역").as(StationResponse.class);
         정자역 = StationAcceptanceTest.지하철역_등록되어_있음("정자역").as(StationResponse.class);
         광교역 = StationAcceptanceTest.지하철역_등록되어_있음("광교역").as(StationResponse.class);
+        잠실역 = StationAcceptanceTest.지하철역_등록되어_있음("잠실역").as(StationResponse.class);
 
         Map<String, String> lineCreateParams;
         lineCreateParams = new HashMap<>();
